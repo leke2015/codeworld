@@ -14,7 +14,7 @@
 * @iamxjb 的小程序 ’守望轩‘
   [项目地址](https://github.com/iamxjb/winxin-app-watch-life.net)
 
-* [【码农的世界】](free-e.net)，WordPress 开发的。
+* [【码农的世界】](https://free-e.net)，WordPress 开发的。
 
 ## 更新
 
@@ -23,8 +23,8 @@
 # 相关连接
 
 ## 网站
-[码农的世界](free-e.net)
-[free-e.net](free-e.net)
+[码农的世界](https://free-e.net)
+[free-e.net](https://free-e.net)
 ## 公众号
 ![码农的微世界](https://free-e.net/wp-content/uploads/2017/07/free-e.net_.jpg)
 ## 小程序
