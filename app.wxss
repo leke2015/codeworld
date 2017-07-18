@@ -2,7 +2,7 @@
  * LeKeOpen-Applet
  * Copyright (c) 2017 https://lekee.cc All rights reserved.
  * Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
- * Author: gaopeng 
+ * Author: gaopeng
  */
 
 .container {
@@ -15,11 +15,11 @@
   padding: 50rpx 0;
   text-align: center;
   font-weight: normal;
-    font-size: 30rpx;
-    line-height: 40rpx;
-    color: #757575;
-    border-bottom: 2rpx solid #ededed;
-    margin-bottom:48rpx;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  color: #757575;
+  border-bottom: 2rpx solid #ededed;
+  margin-bottom:48rpx;
 }
 
 .navigator-hover {

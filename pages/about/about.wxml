@@ -2,13 +2,10 @@
 <import src="../../wxParse/wxParse.wxml"/>
 <import src="../../templates/header.wxml"/>
 <view class="container">
- <template is="tempHeader" /> 
-<view class="h2">码农的微世界</view>
+ <template is="tempHeader" />
   <view class="wrapper">
-      <view class="excerpt"> 
-     
+      <view class="excerpt">
         <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
-      
-      </view> 
+      </view>
    </view>
 </view>

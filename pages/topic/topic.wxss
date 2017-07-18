@@ -15,11 +15,10 @@
 }
 .list-item {
   position: relative;
-  border-bottom: 1px solid #eee;  
+  border-bottom: 1px solid #eee;
   overflow: hidden;
   clear: both;
- 
-  border: 1px solid #ccc;
+
   border-radius: 6px;
   margin-bottom: 30rpx;
   background: #fff;
@@ -28,16 +27,16 @@
 
 .list-item  image.cover {
   width: 100%;
-  height: 300rpx;
-  
+  height: 400rpx;
 }
 
  .content-title {
-  padding: 10rpx 30rpx; 
-  overflow:hidden; 
+  padding: 10rpx 30rpx;
+  overflow:hidden;
   text-overflow: ellipsis;
   white-space:nowrap;
- 
+  text-align: center;
+
 }
 .content-title text {
   font-size: 36rpx;
@@ -47,12 +46,11 @@
 }
 .content-brief{
   padding:0rpx 30rpx 30rpx;
-  font-size: 32rpx;
+  font-size: 28rpx;
   line-height: 40rpx;
-  font-weight: 400;
-  overflow: hidden; 
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   color:#989ebb;
+  text-align: center;
 }
-

@@ -2,7 +2,7 @@
  * LeKeOpen-Applet
  * Copyright (c) 2017 https://lekee.cc All rights reserved.
  * Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
- * Author: gaopeng 
+ * Author: gaopeng
  */
 
 var Api = require('../../utils/api.js');
@@ -20,7 +20,7 @@ Page({
 
 
     isLastPage:false,
-    
+
     page: 1,
     search: '',
     categories: 0,
@@ -32,7 +32,7 @@ Page({
 
     showallDisplay:"block",
 
-    
+
 
     displayHeader:"none",
     displaySwiper: "none",
@@ -55,14 +55,13 @@ Page({
         showCancel: false,
       });
 
-
     }
-    
-    
+
+
   },
   onShareAppMessage: function () {
     return {
-      title: '码农的微世界，基于 WordPress。技术支持：乐可开源',
+      title: '码农的微世界，内容基于 WordPress。【技术支持：乐可开源】',
       path: 'pages/index/index',
       success: function (res) {
         // 转发成功
@@ -80,20 +79,20 @@ Page({
       displaySwiper:"none",
       floatDisplay:"none"
     });
-    this.fetchTopFivePosts(); 
-    
+    this.fetchTopFivePosts();
+
   },
   onReachBottom: function () {
 
-    //console.log("xialajiazai");  
-   
+    //console.log("xialajiazai");
+
   },
   onLoad: function (options) {
-    var self = this; 
-    this.fetchTopFivePosts();   
+    var self = this;
+    this.fetchTopFivePosts();
   },
 
-  
+
   fetchTopFivePosts: function () {
     var self = this;
     self.setData({
@@ -122,7 +121,7 @@ Page({
                   item.post_medium_image_300 = Api.getContentFirstImage(item.content.rendered);
                 }
 
-              }             
+              }
               return item;
             })),
             showallDisplay: "block",
@@ -134,7 +133,7 @@ Page({
 
         else {
           self.setData({
-           
+
             displaySwiper: "none",
             displayHeader:"block",
             showallDisplay: "block",
@@ -153,7 +152,7 @@ Page({
 
   //获取文章列表数据
   fetchPostsData: function (data) {
-    var self = this;    
+    var self = this;
     if (!data) data = {};
     if (!data.page) data.page = 1;
     if (!data.categories) data.categories = 0;
@@ -167,7 +166,7 @@ Page({
     wx.showLoading({
       title: '正在加载',
       mask:true
-    }) 
+    })
     wx.request({
       url: Api.getPosts(data),
       success: function (response) {
@@ -179,15 +178,15 @@ Page({
             self.setData({
               isLastPage: true
             });
-          }      
+          }
           self.setData({
             floatDisplay: "block",
             postsList: self.data.postsList.concat(response.data.map(function (item) {
-          
+
               var strdate = item.date
               if (item.category_name !=null)
               {
-                
+
                 item.categoryImage ="../../images/topic.png";
               }
               else
@@ -203,15 +202,15 @@ Page({
               return item;
             })),
 
-          });          
+          });
           setTimeout(function () {
-            wx.hideLoading();            
+            wx.hideLoading();
           }, 900);
         }
         else
         {
 
-        
+
           if (response.data.code =="rest_post_invalid_page_number")
           {
 
@@ -243,7 +242,7 @@ Page({
              showerror: "block",
              floatDisplay: "none"
            });
-          
+
          }
          else
          {
@@ -258,7 +257,7 @@ Page({
              page: data.page-1
            });
          }
-         
+
 
       },
       complete:function()
@@ -270,7 +269,7 @@ Page({
   },
   //加载分页
   loadMore: function (e) {
-    
+
     var self = this;
     if (!self.data.isLastPage)
     {
@@ -326,11 +325,11 @@ Page({
     })
   },
 
-  
+
 
   //返回首页
   redictHome: function (e) {
-    //console.log('查看某类别下的文章');  
+    //console.log('查看某类别下的文章');
     var id = e.currentTarget.dataset.id,
       url = '/pages/index/index';
 
@@ -339,6 +338,3 @@ Page({
     });
   }
 })
-
-
-

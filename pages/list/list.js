@@ -1,12 +1,9 @@
-// +----------------------------------------------------------------------
-// | LeKeOpen-Applet [ Improve the lives source ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2017 http://lekee.cc All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: gaopeng
-// +----------------------------------------------------------------------
+/*
+ * LeKeOpen-Applet
+ * Copyright (c) 2017 https://lekee.cc All rights reserved.
+ * Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+ * Author: gaopeng
+ */
 
 var Api = require('../../utils/api.js');
 var util = require('../../utils/util.js');
@@ -23,11 +20,11 @@ Page({
     isLastPage: false,
     page: 1,
     search: '',
-    categories: 0, 
+    categories: 0,
 
     categoriesName:'',
 
-    categoriesImage:"", 
+    categoriesImage:"",
 
     showerror:"none",
 
@@ -49,7 +46,7 @@ Page({
   },
   onShareAppMessage: function () {
 
-    var title = "分享“码农的微世界”";
+    var title = "分享“我是一个码农”";
     var path =""
 
     if (this.data.categories && this.data.categories != 0 != 0)
@@ -80,7 +77,7 @@ Page({
   {
     var self = this;
     if (self.data.categories && self.data.categories != 0) {
-      
+
       self.setData({
        // categories: options.categoryID,
         isCategoryPage: "block",
@@ -125,8 +122,8 @@ Page({
       self.setData({
         categories: options.categoryID,
         isCategoryPage:"block"
-        
-       
+
+
       });
       self.fetchCategoriesData(options.categoryID);
     }
@@ -144,11 +141,11 @@ Page({
       })
 
       this.fetchPostsData(self.data);
-    }    
+    }
   },
   //获取文章列表数据
   fetchPostsData: function (data) {
-    var self = this;  
+    var self = this;
     if (!data) data = {};
     if (!data.page) data.page = 1;
     if (!data.categories) data.categories = 0;
@@ -158,7 +155,7 @@ Page({
         postsList: []
       });
     };
-    
+
     wx.showLoading({
       title: '正在加载',
       mask:true
@@ -171,8 +168,8 @@ Page({
             self.setData({
               isLastPage: true
             });
-          };                 
-          self.setData({        
+          };
+          self.setData({
 
             floatDisplay: "block",
             showallDisplay: "block",
@@ -196,10 +193,10 @@ Page({
           });
           setTimeout(function () {
             wx.hideLoading();
-           
+
           }, 1500);
 
-        
+
 
         }
         else
@@ -209,7 +206,7 @@ Page({
             self.setData({
               isLastPage: true
             });
-            
+
           }
           else {
             wx.showToast({
@@ -217,7 +214,7 @@ Page({
               duration: 1500
             })
           }
-        }       
+        }
 
       } ,
 
@@ -245,7 +242,7 @@ Page({
         }
       }
     });
-  },  
+  },
 
 
 
@@ -292,13 +289,10 @@ Page({
           }
         });
 
-        self.fetchPostsData(self.data);        
+        self.fetchPostsData(self.data);
 
       }
     });
   },
 
 })
-
-
-

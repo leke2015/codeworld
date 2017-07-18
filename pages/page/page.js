@@ -1,12 +1,9 @@
-// +----------------------------------------------------------------------
-// | LeKeOpen-Applet [ Improve the lives source ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2017 http://lekee.cc All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: gaopeng
-// +----------------------------------------------------------------------
+/*
+ * LeKeOpen-Applet
+ * Copyright (c) 2017 https://lekee.cc All rights reserved.
+ * Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+ * Author: gaopeng
+ */
 
 
 var Api = require('../../utils/api.js');

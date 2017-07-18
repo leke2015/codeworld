@@ -2,7 +2,7 @@
  * LeKeOpen-Applet
  * Copyright (c) 2017 https://lekee.cc All rights reserved.
  * Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
- * Author: gaopeng 
+ * Author: gaopeng
  */
 
 var Api = require('../../utils/api.js');
@@ -17,7 +17,7 @@ Page({
   },
   onLoad:function(options){
     wx.setNavigationBarTitle({
-      title: '码农的微世界-分类',
+      title: '码农的微世界 - 分类',
       success: function (res) {
         // success
       }
@@ -26,7 +26,7 @@ Page({
       title: '正在加载',
       mask:true
     })
-   
+
 
     this.fetchCategoriesData();
   },
@@ -46,12 +46,12 @@ Page({
           floatDisplay:"block",
 
           categoriesList: self.data.categoriesList.concat(response.data.map(function (item) {
-            if (typeof (item.category_thumbnail_image) == "undefined" || item.category_thumbnail_image=="") 
+            if (typeof (item.category_thumbnail_image) == "undefined" || item.category_thumbnail_image=="")
             {
               item.category_thumbnail_image ="../../images/website.png";
-              
-            }  
-            return item;        
+
+            }
+            return item;
           })),
 
 
@@ -81,7 +81,7 @@ Page({
 
   //跳转至某分类下的文章列表
   redictIndex: function (e) {
-    //console.log('查看某类别下的文章');  
+    //console.log('查看某类别下的文章');
     var id = e.currentTarget.dataset.id;
     var name = e.currentTarget.dataset.item;
     var url = '../list/list?categoryID=' + id;
@@ -93,10 +93,10 @@ Page({
     // 页面渲染完成
   },
   onPullDownRefresh: function () {
-    
+
   },
   onShow:function(){
-    
+
     // 页面显示
   },
   onHide:function(){

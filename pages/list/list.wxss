@@ -2,7 +2,7 @@
  * LeKeOpen-Applet
  * Copyright (c) 2017 https://lekee.cc All rights reserved.
  * Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
- * Author: gaopeng 
+ * Author: gaopeng
  */
 
 
@@ -10,7 +10,7 @@
   padding: 50rpx 0;
   text-align: left;
   font-weight: normal;
-  font-size: 40rpx;
+  font-size: 36rpx;
   line-height: 40rpx;
   color: #21759b;
   border-bottom: 2rpx solid #ededed;
@@ -20,50 +20,32 @@
 
 /*topic list*/
 .topic-common-list {
-  padding:30rpx 30rpx;
-}
-.topic-list-item {
-  position: relative;
-  border-bottom: 1px solid #eee;  
-  overflow: hidden;
-  clear: both;
- 
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-bottom: 30rpx;
-  background: #fff;
+  padding: 30rpx 30rpx;
 }
 
 
 .topic-list-item  image.cover {
   width: 100%;
-  height: 300rpx;
-  
+  height: 250rpx;
+
 }
 
  .topic-content-title {
-  padding: 10rpx 30rpx; 
-  overflow:hidden; 
+  padding: 10rpx 30rpx;
+  overflow:hidden;
   text-overflow: ellipsis;
   white-space:nowrap;
- 
+  text-align: center;
+
 }
 .topic-content-title text {
-  font-size: 36rpx;
+  font-size: 32rpx;
   line-height: 36rpx;
   font-weight: bold;
   color:#121b23;
+
 }
-.topic-content-brief{
-  padding:0rpx 30rpx 30rpx;
-  font-size: 32rpx;
-  line-height: 40rpx;
-  font-weight: 400;
-  overflow: hidden; 
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color:#989ebb;
-}
+
 
 .searchKey
 {
