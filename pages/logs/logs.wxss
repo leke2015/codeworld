@@ -1,0 +1,16 @@
+/*
+ * LeKeOpen-Applet
+ * Copyright (c) 2017 https://lekee.cc All rights reserved.
+ * Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+ * Author: gaopeng 
+ */
+
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}

@@ -1,0 +1,3 @@
+<template name="tempCopyright">
+<view>  © 2017 码农的微世界 free-e.net      </view>
+</template>

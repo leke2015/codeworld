@@ -1,0 +1,15 @@
+/*
+ * LeKeOpen-Applet
+ * Copyright (c) 2017 https://lekee.cc All rights reserved.
+ * Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+ * Author: gaopeng 
+ */
+
+
+<template name="tempFooter"> 
+  <view class="header">    
+    <view>
+      © 2017 码农的微世界 free-e.net is proudly powered by WordPress
+    </view>
+  </view>
+</template>

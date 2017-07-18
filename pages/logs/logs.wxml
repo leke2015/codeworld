@@ -1,0 +1,15 @@
+// +----------------------------------------------------------------------
+// | LeKeOpen-Applet [ Improve the lives source ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2017 http://lekee.cc All rights reserved.
+// +----------------------------------------------------------------------
+// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+// +----------------------------------------------------------------------
+// | Author: gaopeng
+// +----------------------------------------------------------------------
+
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>

@@ -1,0 +1,60 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/logs/logs",
+    "pages/page/page",
+    "pages/about/about",
+    "pages/list/list",
+    "pages/topic/topic",
+    "pages/readlog/readlog"
+  ],
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#296FD0",
+    "navigationBarTitleText": "码农的微世界",
+    "navigationBarTextStyle":"#fff"
+  },
+
+
+  "tabBar":{
+    "color": "#000",
+    "selectedColor": "#fff",
+    "borderStyle": "black",
+    "backgroundColor":"#296FD0",
+    "list": [
+      {
+        "text":"文章",
+        "iconPath":"images/list_black.png",
+        "selectedIconPath":"images/list_white.png",
+        "pagePath":"pages/index/index"
+      },
+      {
+        "text": "分类",
+        "iconPath": "images/class_block.png",
+        "selectedIconPath": "images/class_white.png",
+        "pagePath": "pages/topic/topic"
+      },
+      {
+        "text": "我的",
+        "iconPath": "images/user_black.png",
+        "selectedIconPath":"images/user_white.png",
+        "pagePath": "pages/readlog/readlog"
+      },
+      {
+        "text":"关于小程序",
+        "iconPath":"images/info_block.png",
+        "selectedIconPath":"images/info_white.png",
+        "pagePath":"pages/about/about"
+      }
+    ]
+  },
+
+  "networkTimeout": {
+  "request": 10000,
+  "connectSocket": 10000,
+  "uploadFile": 10000,
+  "downloadFile": 10000
+  }
+}

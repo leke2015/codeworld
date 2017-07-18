@@ -1,0 +1,270 @@
+.content-article-detail {    
+    border-bottom: 2rpx solid #ededed;
+    margin-top: 40rpx;
+    margin-bottom: 20px;
+}
+
+
+.entry-title {
+    font-size: 50rpx;
+    line-height: 1.2;
+    font-weight:normal;
+    outline: none;
+    /*color: #21759b; */
+    margin-bottom:25rpx;
+}
+
+.entry-summary{
+  font-size: 35rpx;  
+  line-height:1.8rem
+
+}
+
+.entry-summary image {
+  width: 100% !important;
+}
+
+.entry-date {
+    font-size: 25rpx;
+    line-height: 1.5;
+    font-weight:normal;
+    outline: none;
+    margin-bottom:30rpx;
+    border-bottom: 2rpx solid #ededed;
+    margin-left: 30rpx;
+    
+   
+}
+.entry-date-text
+{
+  margin-left: 20rpx
+}
+
+.entry-category-text
+{
+  margin-left: 20rpx
+}
+
+
+
+/*  comment   */
+
+
+.commentheader {
+  padding: 20rpx 0;
+  text-align: left;
+  font-weight: normal;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  color: #757575;
+}
+
+.comment {
+  border-bottom: 2rpx solid #ccc;
+
+}
+
+.comment-user {
+  font-size: 30rpx;
+  line-height: 1.2;
+  font-weight: normal;
+  outline: none;
+  color: #000;
+  margin-bottom: 25rpx;
+  margin-top: 25rpx;
+}
+
+.comment-date {
+  font-size: 25rpx;
+  line-height: 1.2;
+  font-weight: normal;
+  outline: none;
+  
+  margin-bottom: 30rpx;
+}
+
+.comment-response {
+  color: #757575;
+  font-size: 30rpx;
+  line-height: 1.8rem;
+  margin-bottom: 50rpx;
+}
+
+.comment-summary {
+  color: #757575;
+  font-size: 30rpx;
+  line-height: 1.2rem;
+  margin-bottom: 10rpx;
+ 
+}
+
+.comment-post {
+  color: #757575;
+  font-size: 30rpx;
+  line-height: 1.8rem;
+  margin-bottom: 50rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.comment-respond {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.comment-reply-title {
+  font-size: 40rpx;
+  line-height: 1.5;
+  color: #21759b;
+}
+
+.comment-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  margin-bottom:1px;
+
+}
+
+.comment-box {
+  padding: 2px 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.comment-area {
+  border: 1px solid #ccc;
+  margin-top: 20rpx;
+  max-width: 700rpx;
+}
+
+.comment-button {
+  width: 150rpx;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 22rpx;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 6px!important;
+  border-bottom-right-radius: 6px!important;
+  text-align: center;
+  padding: 0 2px !important;
+  font-size: 12px;
+  background-color:  #296FD0;
+  color: #fff;
+  border:none;
+  border-radius:0;
+
+}
+
+.comment-input {
+  background-color: #f2f2f2;
+  margin-bottonm: 10px;
+  padding: 2px 3px 2px 10px;
+  font-size: 12px;
+  height: 30px;
+  max-height: 30px;
+  width: 80%;
+  text-align: left;
+  border: 1px solid  #296FD0;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
+
+.textNoEmpty {
+  color: red;
+}
+
+.gravatarImg {
+  margin-top: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(1);
+  perspective-origin: top center;
+  transition: all ease-in-out 0.3s;
+  height: 48rpx;
+  width: 48rpx;
+}
+
+
+
+
+.more-comment {
+  
+  font-size: 30rpx;
+  line-height: 1.8rem;
+  margin-bottom:50rpx;
+  text-align: center;
+  margin-top: 20rpx
+}
+
+
+
+/*  comment end  */
+
+
+.sharedetail
+{
+  position: relative;
+  text-align: center;
+}
+
+
+.share-button {
+  width: 150rpx;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 20rpx;
+  border-radius: 2px;
+  text-align: center;
+  padding: 0 2px !important;
+  font-size: 12px;
+  background-color: #20B444;
+  color: #fff;  
+}
+
+.copy-button
+{
+  border: 1px solid #eee !important;
+  color: #296FD0 !important;  
+  height:60rpx;
+  width: 250rpx;
+  margin-left: 30rpx
+}
+
+.showMessage
+{
+  text-align: center;
+  font-weight: normal;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  color: sandybrown;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx
+}
+
+.ditail-copyright
+{
+
+  font-size: 26rpx;
+  line-height: 1.2;
+  font-weight: normal;
+  text-align: center;
+  color:  #999;
+  margin-top: 20rpx;
+  margin-bottom: 50rpx
+
+}
+
+
+
